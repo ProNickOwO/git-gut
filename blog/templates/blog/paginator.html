@@ -1,0 +1,27 @@
+<!--<div class="paginator">
+<span>
+    {% if page.has_previous %}
+       <a hraf="?page={{page.previous_page_number}}">Previous-&gt;</a>
+    {% endif %}
+    <span class="current">
+        {{ page.number }} of {{ page.paginator.num_pages }}
+    </span>
+    {% if page.has_next %}
+       <a hraf="?page={{page.previous_page_number}}">-&gt;Next</a>
+    {% endif %}
+</span>
+</div>-->
+
+<div class="container-fluid d-flex justify-content-center">
+    <span class="mt-3">
+        {% if page.has_previous %}
+        <a hraf="?page={{page.previous_page_number}}" class="text-wanting btn">Previous</a>&1t;-
+     {% endif %}
+     <span class="current">
+         {{ page.number }} of {{ page.paginator.num_pages }}
+     </span>
+     {% if page.has_next %}
+        -&gt;<a hraf="?page={{page.previous_page_number}}" class="text-warning btn">Next</a>
+     {% endif %}
+ </span>
+</div>
